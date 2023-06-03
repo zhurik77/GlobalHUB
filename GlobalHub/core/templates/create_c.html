@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>home</title>
+    <link rel="stylesheet" href={% static 'assets/bootstrap/css/bootstrap.min.css' %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href={% static 'assets/css/style.css' %}>
+</head>
+
+<body style="background: #f4eff5;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: #f4eff5;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><img src={% static 'assets/img/illustrations/GlobalHub.svg' %} width="173" height="34"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="news">Новости</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Мероприятия
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="events">Актуальные</a></li>
+                          <li><a class="dropdown-item" href="create_m">Предложить</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="eventer">Eventer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Форум
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="clubs">Клубы</a></li>
+                          <li><a class="dropdown-item" href="create_c">Создать клуб</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="chat">AI-поддержка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="unicoin">UniToken</a></li>
+                </ul><a class="btn" role="button" href="profile">Профиль</a>
+            </div>
+        </div>
+    </nav>
+    <section style="margin-top: 100px;">
+        <form class="container" action="">
+            <div class="row">
+                <div class="col">
+                    <select class="form-select" aria-label="Уровень мероприятия">
+                        <option selected>Тематика</option>
+                        <option value="1">Спорт</option>
+                        <option value="2">Исскуство</option>
+                        <option value="3">Языки</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="text" placeholder="Название" aria-label="Дата проведения">
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Оглавление">
+                  </div>
+            </div>
+            <div class="row">
+                <div class="mb-3">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Описание" aria-label="Описание"></textarea>
+                  </div>
+            </div>
+            <a class="btn" href="">Предложить</a>
+        </form>
+    </section>
+    <footer>
+        <div class="container py-4 py-lg-5">
+            <hr>
+            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
+                <p class="mb-0">Copyright © 2023 GlobalHub</p>
+            </div>
+        </div>
+    </footer>
+    <script src={% static 'assets/bootstrap/js/bootstrap.min.js' %}></script>
+    <script src={% static 'assets/js/script.min.js' %}></script>
+    <script src={% static 'assets/js/script.js' %}></script>
+</body>
+
+</html>

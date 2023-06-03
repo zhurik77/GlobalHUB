@@ -1,0 +1,126 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pricing - Brand</title>
+    <link rel="stylesheet" href={% static 'assets/bootstrap/css/bootstrap.min.css' %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href={% static 'assets/css/style.css' %}>
+</head>
+
+<body style="background: #f4eff5;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: #f4eff5;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><img src={% static 'assets/img/illustrations/GlobalHub.svg' %} width="173" height="34"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="news">Новости</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Мероприятия
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="events">Актуальные</a></li>
+                          <li><a class="dropdown-item" href="create_m">Предложить</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="eventer">Eventer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Форум
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="clubs">Клубы</a></li>
+                          <li><a class="dropdown-item" href="create_c">Создать клуб</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="chat">AI-поддержка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="unicoin">UniToken</a></li>
+                </ul><a class="btn" role="button" href="profile">Профиль</a>
+            </div>
+        </div>
+    </nav>
+    <section class="container news">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Региональный уровень</strong>
+                <h3 class="mb-0">Студенческий форум "Молодежь вдохновения" - это мероприятие, которое проводится в каждом регионе и собирает студентов из разных университетов и колледжей.</h3>
+                <div class="mb-1 text-muted">31 Мая</div>
+                <p class="card-text mb-auto">CampusHub: Внедрение искусственного интеллекта - новый виток развития нашего сервиса</p>
+                <a href="#" class="stretched-link btn mt-4">Продолжить чтение</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Эскиз" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #43484b;"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #dddad6;">Эскиз</text></svg>
+              </div>
+            </div>
+          </div>
+                <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Региональный уровень</strong>
+                <h3 class="mb-0">Студенческий фестиваль "ТалантЪ" - это мероприятие, которое предоставляет студентам платформу для демонстрации своих творческих способностей.</h3>
+                <div class="mb-1 text-muted">30 Мая</div>
+                <p class="mb-auto">Фестиваль включает конкурсы по музыке, танцам, театру, изобразительному искусству и другим областям творчества.</p>
+                <a href="#" class="stretched-link btn mt-4">Продолжить чтение</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Эскиз" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #43484b;"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #dddad6;">Эскиз</text></svg>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Всероссийский уровень</strong>
+                <h3 class="mb-0">Всероссийская олимпиада по научным исследованиям студентов - это престижное соревнование, где студенты со всей страны представляют свои научные исследования. </h3>
+                <div class="mb-1 text-muted">30 Мая</div>
+                <p class="card-text mb-auto">Олимпиада охватывает широкий спектр научных областей и позволяет студентам продемонстрировать свои знания и умения.</p>
+                <a href="#" class="stretched-link btn mt-4">Продолжить чтение</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Эскиз" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #43484b;"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #dddad6;">Эскиз</text></svg>
+      
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Международный уровень</strong>
+                <h3 class="mb-0">Международная студенческая конференция по глобальным проблемам - это мероприятие, которое привлекает студентов из разных стран</h3>
+                <div class="mb-1 text-muted">23 Мая</div>
+                <p class="mb-auto"> для обсуждения и поиска решений глобальных проблем, таких как изменение климата, бедность, здравоохранение и другие важные вопросы.</p>
+                <a href="#" class="stretched-link btn mt-4">Продолжить чтение</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Эскиз" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #43484b;"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #dddad6;">Эскиз</text></svg>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+    <section class="form">
+    <footer>
+        <div class="container py-4 py-lg-5">
+            <hr>
+            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
+                <p class="mb-0">Copyright © 2023 GlobalHub</p>
+            </div>
+        </div>
+    </footer>
+    <script src={% static 'assets/bootstrap/js/bootstrap.min.js' %}></script>
+    <script src={% static 'assets/js/script.min.js' %}></script>
+    <script src={% static 'assets/js/script.js' %}></script>
+</body>
+
+</html>

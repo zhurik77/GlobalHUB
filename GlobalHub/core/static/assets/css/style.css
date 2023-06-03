@@ -1,0 +1,382 @@
+/* @font-face {
+    font-family: 'Nekst-Black';
+    src: url(/assets/fonts/Nekst-Black.ttf) format('truetype');
+    font-weight: Black;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Nekst-Bold';
+    src: url(/assets/fonts/Nekst-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Nekst-Light';
+    src: url(/assets/fonts/Nekst-Light.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nekst-Medium';
+    src: url(/assets/fonts/Nekst-Medium.ttf) format('truetype');
+    font-weight: Medium;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nekst-Regular';
+    src: url(/assets/fonts/Nekst-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nekst-Thin';
+    src: url(/assets/fonts/Nekst-Thin.ttf) format('truetype');
+    font-weight: Thin;
+    font-style: normal;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto';
+}
+
+:root {
+    --color-1: #0D0A0B;
+    --color-2: #454955;
+    --color-3: #F3EFF5;
+    --color-4: rgb(114, 176, 29);
+    --color-4-1: #73b01d45;
+    --color-5: rgb(63, 125, 32);
+}
+
+.btn {
+    background-color: var(--color-4);
+    border-radius: 10px;
+    color: var(--color-3);
+    font-size: 15px;
+
+    transition: all linear .1s;
+}
+
+h2 {
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+/* /all */
+
+/* nav */
+.nav-item:hover {
+    color: var(--color-4);
+}
+/* /nav */
+
+/* header */
+header{
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+
+header p {
+    color: var(--color-2);
+    
+}
+/* /header */
+
+/* carousel */
+.carousel {
+
+}
+
+.card {
+    margin-bottom: 40px;
+    background-color: var(--color-4);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-3);
+}
+
+.card h5 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.card .card-text {
+    font-size: 17px;
+}
+
+.card h5 img {
+    height: 40px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.card-body {
+    padding-bottom: 50px;
+}
+/* /carousel */
+
+/* forma */
+.forma .btn {
+    margin-top: 20px;
+}
+/* /forma */
+
+/* profile */
+.profile {
+    margin-top: 100px;
+}
+
+.profile-header {
+    background: linear-gradient(to bottom, var(--color-4) 57%, transparent 50%);
+    border: 1px solid #a2a2a2;
+    border-radius: 20px;
+
+    padding: 5px 30px;
+    padding-top: 120px;
+}
+
+.profile-header img {
+    height: 200px;
+    width: 200px;
+}
+
+.profile-header h4 {
+    font-size: 30px;
+    margin: 0;
+    margin-left: 30px;
+    padding-top: 115px;
+}
+
+.profile-header a {
+    margin-top: 113px;
+    height: 41px;
+}
+
+.profile-item {
+    border: 1px solid #a2a2a2;
+    border-radius: 20px;
+    padding-left: 44px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    position: relative;
+}
+
+.profile-item h4 {
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.profile-item h2 {
+    font-size: 20px;
+    margin: 0;
+    text-align: right;
+}
+
+.profile-item img {
+    position: absolute;
+    height: 50px;
+    width: auto;
+    padding: 0;
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+}
+/* /profile */
+
+/* news */
+.news {
+    margin-top: 150px;
+}
+/* /news */
+
+/* chat */
+.chat-container {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 500px;
+    background-color: var(--color-3);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-header {
+    background-color: var(--color-2);
+    color: var(--color-3);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .chat-body {
+    padding: 10px;
+    overflow-y: scroll;
+  }
+  
+  .chat-message {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .chat-message p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+
+  .chat-message {
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-color: var(--color-3);
+    border-radius: 10px;
+    color: var(--color-1);
+    align-items: center;
+    padding-top: 8px;
+    margin-top: 8px;
+    margin-bottom:8px;
+  }
+
+  .bot {
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-color: var(--color-4);
+    border-radius: 10px;
+    color: var(--color-3);
+  }
+  
+  .answer {
+    background-color: #EEE;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFF;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .chat-input input {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .chat-input button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-2);
+    color: #FFF;
+    cursor: pointer;
+  }
+/* /chat */
+
+/* unicoin */
+.unicoin {
+    margin-top: 100px;
+}
+
+.unicoin-item {
+    border: 1px solid #a2a2a2;
+    border-radius: 20px;
+    padding-left: 44px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.unicoin-item .card {
+    background-color: transparent;
+    color: var(--color-1);
+    border: 1px solid #a2a2a2;
+    border-radius: 20px;
+}
+
+.unicoin-item .card .card-body{
+    background-color: transparent;
+    padding-bottom: 16px;
+}
+
+.bd-placeholder-img {
+    border-radius: 20px;
+}
+
+.unicoin-item img {
+    height: 80px;
+    width: auto;
+    position: absolute;
+    padding: 0;
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+}
+
+.unicoin-item h4 {
+    margin: 0;
+    margin-right: 50px;
+}
+/* /unicoin */
+
+@media (max-width: 1023px) {
+    header {
+        text-align: center;
+    }
+    header img {
+        display: none!important;
+    }
+    header .col {
+        display: none;
+    }header .col-7 {
+        width: 100%;
+    }
+    header h2 .row{
+        justify-content: center;
+    }
+
+    .carousel .row h4 {
+        justify-content: center;
+    }
+
+    .forma .row h4 {
+        text-align: center;
+    }
+
+    .profile-header {
+        display: block!important;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}

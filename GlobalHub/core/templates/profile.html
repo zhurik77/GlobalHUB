@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>profile</title>
+    <link rel="stylesheet" href={% static 'assets/bootstrap/css/bootstrap.min.css' %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href={% static 'assets/css/style.css' %}>
+</head>
+
+<body style="background: #f4eff5;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: #f4eff5;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><img src={% static 'assets/img/illustrations/GlobalHub.svg' %} width="173" height="34"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="news">Новости</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Мероприятия
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="events">Актуальные</a></li>
+                          <li><a class="dropdown-item" href="create_m">Предложить</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="eventer">Eventer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Форум
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="clubs">Клубы</a></li>
+                          <li><a class="dropdown-item" href="create_c">Создать клуб</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="chat">AI-поддержка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="unicoin">UniToken</a></li>
+                </ul><a class="btn" role="button" href="profile">Профиль</a>
+            </div>
+        </div>
+    </nav>
+    <section class="profile">
+        <div class="container">
+            <div class="row">
+                <div class="profile-header d-flex" style="justify-content: space-between;">
+                    <div class="d-flex">
+                        <img src={% static 'assets/img/illustrations/Avatar.png' %} alt="">
+                        <h4 style="">{{ request.user.last_name }} {{ request.user.first_name }} {{ request.user.profile.patronymic }}</h4>
+                    </div>
+                    <a class="btn" style="right:0" href="">Редактировать профиль</a>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="profile-inform">
+                    <div class="row" style="justify-content: space-between;">
+                        <div class="col" style="padding-right: 0px; padding-top:25px; padding-left:0">
+                            <div class="profile-item">
+                                <div class="row">
+                                    <div class="col"><h4>Номер телефона:</h4></div>
+                                    <div class="col"><h2>{{ request.user.profile.phone_number }}</h2></div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col"><h4>Почта:</h4></div>
+                                    <div class="col"><h2>{{ request.user.email }}</h2></div>
+                                </div>
+                                <hr style="margin: 30px 0;">
+                                <div class="row mt-4">
+                                    <div class="col"><h4>Университет:</h4></div>
+                                    <div class="col"><h2>{{ request.user.profile.university }}</h2></div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col"><h4>Курс:</h4></div>
+                                    <div class="col"><h2>{{ request.user.profile.grade }}</h2></div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col"><h4>Специальность:</h4></div>
+                                    <div class="col"><h2>{{ request.user.profile.direction }}</h2></div>
+                                </div>
+                                <hr style="margin: 30px 0;">
+                                <div class="row mt-4">
+                                    <div class="col"><h4>Интересы:</h4></div>
+                                    <div class="col"><h2>{{ request.user.profile.interests }}</h2></div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col"><h4>Навыки:</h4></div>
+                                    <div class="col"><h2>{{ request.user.profile.skills }}</h2></div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col"><h4>Языки:</h4></div>
+                                    <div class="col"><h2>{{ request.user.profile.languages }}</h2></div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col"><h4>Обо мне:</h4></div>
+                                    <div class="col" style="align-items: left;"><h2>{{ request.user.profile.about_me }}</h2></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" style="padding-right: 0px; padding-top:25px; padding-left:25px">
+                            <div class="profile-item">
+                                <div class="row d-flex" style="justify-content: right;">
+                                    <img src={% static 'assets/img/illustrations/Untitled 12.svg' %} alt="">
+                                    <h4 style="width: 40%; text-align:left">{{ balance }}</h4>
+                                </div>
+                            </div>
+                            <div class="profile-item" style="margin-top: 25px">
+                                <div class="row d-block" style="justify-content: right;">
+                                    <div class="col"><h4>Рекомендации</h4></div>
+                                    <hr style="margin: 30px 0;">
+                                    <div class="col" style="align-items: left;"><h2></span> <span class="placeholder col-12"> <span class="placeholder col-"></span></span></h2></div>
+                                    <div class="col mt-4" style="align-items: left;"><h2></span> <span class="placeholder col-12"> <span class="placeholder col-"></span></span></h2></div>
+                                    <div class="col mt-4" style="align-items: left;"><h2></span> <span class="placeholder col-12"> <span class="placeholder col-"></span></span></h2></div>
+                                    <div class="col mt-4" style="align-items: left;"><h2></span> <span class="placeholder col-12"> <span class="placeholder col-"></span></span></h2></div>
+                                    <div class="col mt-4" style="align-items: left;"><h2></span> <span class="placeholder col-12"> <span class="placeholder col-"></span></span></h2></div>
+                                    <div class="col mt-4" style="align-items: left;"><h2></span> <span class="placeholder col-12"> <span class="placeholder col-"></span></span></h2></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container py-4 py-lg-5">
+            <hr>
+            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
+                <p class="mb-0">Copyright © 2023 GlobalHub</p>
+            </div>
+        </div>
+    </footer>
+    <script src={% static 'assets/bootstrap/js/bootstrap.min.js' %}></script>
+    <script src={% static 'assets/js/script.min.js' %}></script>
+    <script src={% static 'assets/js/script.js' %}></script>
+</body>
+
+</html>

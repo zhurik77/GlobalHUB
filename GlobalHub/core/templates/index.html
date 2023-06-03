@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>home</title>
+    <link rel="stylesheet" href={% static 'assets/bootstrap/css/bootstrap.min.css' %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href={% static 'assets/css/style.css' %}>
+</head>
+
+<body style="background: #f4eff5;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: #f4eff5;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><img src={% static 'assets/img/illustrations/GlobalHub.svg' %} width="173" height="34"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="news">Новости</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Мероприятия
+                        </a>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="events">Актуальные</a></li>
+                          <li><a class="dropdown-item" href="create_m">Предложить</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="eventer">Eventer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Форум
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="clubs">Клубы</a></li>
+                          <li><a class="dropdown-item" href="create_c">Создать клуб</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="chat">AI-поддержка</a></li>
+                    <li class="nav-item"><a class="nav-link" href="unicoin">UniToken</a></li>
+                </ul><a class="btn" role="button" href="profile">Профиль</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="a">
+                        <h2>
+                            <div class="row d-flex"><div style="color:var(--color-5); width:auto">Студентов&nbsp;</div> много,</div>
+                            <div class="row d-flex"><div style="color:var(--color-4); width:auto">Хаб</div>&nbsp;&#8211; один. </div>
+                        </h2>
+                        <p>
+                            GlobalHub - инновационная платформа для международных 
+                            университетских кампусов, предоставляющая персонализированные 
+                            рекомендации студентам по активностям.
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" href="profile">Войти через UniversityID</a>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Change language
+                                    </a>
+                                
+                                    <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Русский</a></li>
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Français</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src={% static 'assets/img/illustrations/header.svg' %} alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="carousel">
+        <div class="container">
+            <div class="row">
+                <h4 class="d-flex">Что <div style="color:var(--color-5); width:auto">&nbsp;МЫ&nbsp;</div> можем дать <div style="color:var(--color-4); width:auto">&nbsp;ВАМ</div>?</h4>
+            </div>
+            <div class="row" style="justify-content:space-around;">
+                <div class="card" style="width: 30rem;">
+                    <div class="card-body">
+                    <h5 class="card-title"> <img src={% static 'assets/img/illustrations/person-bounding-box.svg' %} alt=""> Персонализированные рекомендации</h5>
+                    <p class="card-text">Персонализированные рекомендации студентам по активностям, мероприятиям и клубам на кампусе, основанные на их предпочтениях и интересах.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 30rem;">
+                    <div class="card-body">
+                    <h5 class="card-title"> <img src={% static 'assets/img/illustrations/globe.svg' %} alt=""> Межкультурное взаимодействие</h5>
+                    <p class="card-text">Межкультурное взаимодействие через организацию мероприятий, клубов и социальных активностей для студентов разных национальностей и культур.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 30rem;">
+                    <div class="card-body">
+                    <h5 class="card-title"> <img src={% static 'assets/img/illustrations/card-text.svg' %} alt=""> AI Виртуальный помощник</h5>
+                    <p class="card-text">Виртуальный помощник на базе ИИ, который предоставляет информацию о жизни на кампусе, поддержку в достижении целей и консультирование.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 30rem;">
+                    <div class="card-body">
+                    <h5 class="card-title"> <img src={% static 'assets/img/illustrations/newspaper.svg' %} alt=""> Платформа для обмена знаниями</h5>
+                    <p class="card-text">Платформа для обмена знаниями и навыками между студентами через совместные проекты и образовательные вебинары.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="forma">
+        <div class="container">
+            <div class="row">
+                <h4 class="d-flex">Что <div style="color:var(--color-5); width:auto">&nbsp;НАМ&nbsp;</div> для этого <div style="color:var(--color-4); width:auto">&nbsp;НУЖНО</div>?</h4>
+            </div>
+            <form action="">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">ФИО</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Иванов Иван Ивановичы">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Другая метка</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Другая подсказка поля ввода">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Другая метка</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Другая подсказка поля ввода">
+                  </div>
+                  <button class="btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </section> -->
+    <footer>
+        <div class="container py-4 py-lg-5">
+            <hr>
+            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
+                <p class="mb-0">Copyright © 2023 GlobalHub</p>
+            </div>
+        </div>
+    </footer>
+    <script src={% static 'assets/bootstrap/js/bootstrap.min.js' %}></script>
+    <script src={% static 'assets/js/script.min.js' %}></script>
+    <script src={% static 'assets/js/script.js' %}></script>
+</body>
+
+</html>
